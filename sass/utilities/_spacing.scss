@@ -1,0 +1,50 @@
+@use "../abstracts" as *;
+
+@each $space-name, $space-value in $space-sizes {
+  .margin {
+    &-#{$space-name} {
+      margin: $space-value;
+    }
+    &-block-start-#{$space-name} {
+      margin-block-start: $space-value;
+    }
+    &-block-end-#{$space-name} {
+      margin-block-end: $space-value;
+    }
+    &-block-#{$space-name} {
+      margin-block: $space-value;
+    }
+    &-inline-start-#{$space-name} {
+      margin-inline-start: $space-value;
+    }
+    &-inline-end-#{$space-name} {
+      margin-inline-end: $space-value;
+    }
+    &-inline-#{$space-name} {
+      margin-inline: $space-value;
+    }
+  }
+  .padding {
+    &-#{$space-name} {
+      padding: $space-value;
+    }
+    &-block-start-#{$space-name} {
+      padding-block-start: $space-value;
+    }
+    &-block-end-#{$space-name} {
+      padding-block-end: $space-value;
+    }
+    &-block-#{$space-name} {
+      padding-block: $space-value;
+    }
+    &-inline-start-#{$space-name} {
+      padding-inline-start: $space-value;
+    }
+    &-inline-end-#{$space-name} {
+      padding-inline-end: $space-value;
+    }
+    &-inline-#{$space-name} {
+      padding-inline: $space-value;
+    }
+  }
+}
