@@ -1,5 +1,5 @@
-@use 'sass:map';
-@use 'colors' as *;
+@use "sass:map";
+@use "colors" as *;
 @use "typography" as *;
 @use "spacess" as *;
 
@@ -19,7 +19,7 @@
   }
 }
 
-@function size($space-size) {
+@function space($space-size) {
   @if map.has-key($space-sizes, $space-size) {
     @return map.get($space-sizes, $space-size);
   } @else {
